@@ -8,6 +8,13 @@ font-family: 'Merriweather', serif;
 background-color: #ebf2ff;
 }
 
+
+.container{
+    max-width: 100%;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -41,6 +48,14 @@ background-color: #ebf2ff;
 
 .nav_items:hover{
     border: 2px solid blue;
+}
+
+.hero_image_container{
+    width: 100%;
+}
+.hero_image{
+    width: 100%;
+    border-radius: 8px;
 }
 
 @media (min-width:768px){
