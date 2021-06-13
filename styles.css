@@ -159,6 +159,69 @@ background-color: #ebf2ff;
 }
 
 
+
+
+.email_container{
+    margin-top: 3rem;
+    width: 100%;
+    padding: 15%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #1d3557;
+    font-weight: 900;
+  }
+
+.email_enter_container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.email_input{
+  border: 1px solid #ee89a0;
+  background-color: #fcedf0;
+  color: #1d3557;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.thought_container{
+  width: 100%;
+  position: relative; 
+  margin-top: 4rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  border-radius: 13px;
+}
+
+.thought_image{
+    width: 100%;
+    position: absolute;
+    z-index: -3;
+    opacity: 49;
+   
+
+}
+.thought_restaurant{
+    width: 100%;
+    border-radius: 15px;
+}
+.thought_text {
+    color: #fff;
+    margin: 0 1rem;
+    text-align: center;
+  }
+
+ 
+
 @media (min-width:768px){
 
     .navbar{
@@ -215,6 +278,44 @@ background-color: #ebf2ff;
        width: 100%;
        font-size: 40px;
    }
+   .email_enter_container{
+       display: flex;
+       gap: 20px;
+       justify-content: center;
+   }
+
+   .email__input {
+    width: 20rem;
+  }
+  
+  .text {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .thought_container {
+    height: 200px;
+    width: 100%;
+   
+  }
+  .thought_image {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    opacity: 49%;
+  }
+  .thought_text {
+    color: #fff;
+    margin: 0 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
 }
 
 @media (min-width: 1020px) {
@@ -246,12 +347,22 @@ background-color: #ebf2ff;
         font-size: 50px;
     }
 
+    .text{
+        font-size: 3rem;
+        line-height: 1;
+      }
+
+    .thought_container{
+        
+        height: 300px;
+        width: 100%;
+      
+      }
+
   }
     
 @media (min-width: 1400px){
     .container{
         max-width: 1250px;
     }
-
-   
 }
