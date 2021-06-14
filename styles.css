@@ -8,6 +8,9 @@ font-family: 'Merriweather', serif;
 background-color: #ebf2ff;
 }
 
+
+
+
 .button_primary{
     background-image: linear-gradient(
         to right,
@@ -32,11 +35,14 @@ background-color: #ebf2ff;
 }
 
 .navbar {
+    position: sticky;
+    top: 0px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #fff;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    height: 80;
 }
 
 .navbar_brand {
@@ -100,10 +106,11 @@ background-color: #ebf2ff;
     background-color: #fff;
     border-radius: 8px;
     margin-bottom: 15px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .food_card_image_container{
-
+   
     width: 100%;
 }
 .food_image{
@@ -128,12 +135,14 @@ background-color: #ebf2ff;
 
 .restaurant_images_container{
     width: 100%;
+   
 }
 
 .restaurant_images_row_one ,.restaurant_images_row_two{
     width: 100%;
     display: flex;
     gap: 3px;
+    
 }
 
 .restaurant_images_row_one{
@@ -144,10 +153,12 @@ background-color: #ebf2ff;
 .restaurant_image_1 , .restaurant_image_4{
     width: 100%;
     height: 120px;
+    
 }
 .restaurant_image_2 , .restaurant_image_3{
     width: 120%;
     height: 200px;
+    
 }
 
 .restaurant_1 ,
@@ -156,6 +167,8 @@ background-color: #ebf2ff;
 .restaurant_4{
     width: 100%;
     height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -191,36 +204,135 @@ background-color: #ebf2ff;
 }
 
 .thought_container{
-  width: 100%;
-  position: relative; 
-  margin-top: 4rem;
-  align-items: center;
+  position: relative;
+  margin-top: 20px;
+  align-items:center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 200px;
+  height:200px;
+  width: 100%;
   border-radius: 13px;
+  background: url(https://media.cntraveler.com/photos/53e2f486dddaa35c30f6692f/master/pass/ithaa-1.jpg)
+  center center / cover no-repeat;
+  
 }
 
 .thought_image{
-    width: 100%;
     position: absolute;
-    z-index: -3;
-    opacity: 49;
-   
-
-}
-.thought_restaurant{
+    height: 200px;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 13px;
+    /* background-color: rgb(137, 159, 226); */
+    opacity: 100;
 }
-.thought_text {
-    color: #fff;
-    margin: 0 1rem;
-    text-align: center;
-  }
 
+ .thought_text{
+     color: #fff;
+     z-index: 3;
+     margin: 0 1rem;
+     text-align: center;
+ }
  
+  
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem 1rem 0 0;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
+    margin-top: 30px;
+}
+
+.footer__image{
+     width: 300px;
+     height: 250px;
+     filter: brightness(0) invert(1);
+}
+
+
+
+.social_button ul{
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+    position: relative;
+    margin-bottom: 10px ;
+}
+
+.social_button ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social_button ul li .fa{
+    font-size: 15px;
+    line-height: 30px;
+    transition: .6%;
+    color: #000;
+}
+
+.social_button ul li .fa:hover{
+    color: #fff;
+}
+
+.social_button ul li a{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6%;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social_button ul li a:hover{
+    transform: translate(0, -10px);
+}
+
+.social_button ul li:nth-child(1) a:hover{
+    background-color: #3b5999;
+}
+.social_button ul li:nth-child(2) a:hover{
+    background-color: #55acee;
+}
+.social_button ul li:nth-child(3) a:hover{
+    background-color: #e4405f;
+}
+.social_button ul li:nth-child(4) a:hover{
+    background-color: #3b5999;
+}
+
+.social_button ul li:nth-child(5) a:hover{
+    background-color: #0F9D58;
+}
+
+
+
+.footer__bottom{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__bottom h3{
+    font-size: 14px;
+    word-spacing: 2px;
+   
+}
+
+span{
+    text-emphasis-style: bold;
+}
+
+
 
 @media (min-width:768px){
 
@@ -295,26 +407,41 @@ background-color: #ebf2ff;
     text-align: center;
   }
 
-  .thought_container {
-    height: 200px;
+  .thought__container {
+    height: 300px;
     width: 100%;
-   
   }
   .thought_image {
     position: absolute;
-    height: 200px;
+    height: 300px;
     width: 100%;
     border-radius: 13px;
+    /* background-color: #0a4065; */
     opacity: 49%;
   }
   .thought_text {
     color: #fff;
+    z-index: 3;
     margin: 0 1rem;
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.2;
   }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer__bottom{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 150px;
+}
+
 
 }
 
